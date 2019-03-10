@@ -8,6 +8,8 @@ Compile with gradle
 
 Run with
     ./gradlew bootRun
+    or
+    java -jar build/libs/rest-romancalculator-1.0.0.jar
 
 Responds to requests in '/roman' and '/integer' with parameter 'value=[source]'
 
