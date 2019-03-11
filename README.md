@@ -25,15 +25,16 @@ they (and other classes) are located in the same package. One of the
 things I have to learn :-)
 
 
-Responds to requests in '/roman' and '/integer'. Value to be converted should be given as path parameter.
+Responds to requests in '/api/roman' and '/api/integer'. 
+Value to be converted should be given as path parameter.
 
 For example:
-    http://localhost:8080/roman/XVI
+    http://localhost:8080/api/roman/XVI
     result JSON:
         result	"14"
         source	"XIV"
 
-    http://localhost:8080/integer/14
+    http://localhost:8080/api/integer/14
     result JSON:
         result	"XIV"
         source	"14"
