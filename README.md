@@ -8,6 +8,8 @@ is very incomplete. I did not do this with TDD because at this point I don't
 know how to test the Controllers and actions properly. Next step for me is
 to learn how to do testing in this environment.
 
+Uses Thymeleaf template framework for HTML view templates.
+
 Compile with gradle
     ./gradlew build
 
@@ -23,7 +25,6 @@ causes an error telling that the request mapping does not work.
 This probably means that Spring Application can't find the controllers even
 they (and other classes) are located in the same package. One of the
 things I have to learn :-)
-
 
 Responds to requests in '/api/roman' and '/api/integer'. 
 Value to be converted should be given as path parameter.
