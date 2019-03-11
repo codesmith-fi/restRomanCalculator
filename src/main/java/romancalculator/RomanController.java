@@ -13,6 +13,7 @@ import romannumerals.RomanNumeralParser;
  * Converts an Roman numeral into integer (as string)
  */
 @RestController
+@RequestMapping("/api")
 public class RomanController {
     /** 
      * Class constants
@@ -21,7 +22,7 @@ public class RomanController {
 
     /**
      * Handles get request /roman
-     * e.g. http://localhost:8080/roman
+     * e.g. http://localhost:8080/api/roman
      * @return ConversionResult holding the result and the source value as "undefined"
      */
     @GetMapping("/roman")
@@ -31,7 +32,7 @@ public class RomanController {
 
     /**
      * Handles get request /roman/[romanValue]
-     * e.g. http://localhost:8080/roman/XIV
+     * e.g. http://localhost:8080/api/roman/XIV
      * @return ConversionResult holding the result and the source value
      */
     @GetMapping("/roman/{value}")

@@ -9,19 +9,20 @@ import org.springframework.web.bind.annotation.PathVariable;
 import romannumerals.RomanNumeralParser;
 
 /**
- * Controller for handling requests to /integer 
+ * Controller for handling requests to /api/integer 
  * Converts an integer into Roman numeral
  */
 @RestController
+@RequestMapping("/api")
 public class IntegerController {
     /** 
      * Class constants
      */
     private static final String TEXT_UNDEFINED = "undefined";
-
+    
     /**
      * Handles get request /integer
-     * e.g. http://localhost:8080/integer
+     * e.g. http://localhost:8080/api/integer
      * @return ConversionResult holding the result and the source value as "undefined"
      */
     @GetMapping("/integer")
@@ -31,7 +32,7 @@ public class IntegerController {
 
     /**
      * Handles get request /integer/[valueasInt]
-     * e.g. http://localhost:8080/integer/14
+     * e.g. http://localhost:8080/api/integer/14
      * @return new ConversionResult holding the source value and result
      */
     @GetMapping("/integer/{value}")
